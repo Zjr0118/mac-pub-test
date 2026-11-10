@@ -1,7 +1,18 @@
 name: P
 on: workflow_dispatch
 jobs:
-  p:
+  m13:
+    runs-on: macos-13
+    steps: [{run: sw_vers}]
+  m14:
     runs-on: macos-14
-    steps:
-      - run: sw_vers; df -h /
+    steps: [{run: sw_vers}]
+  m15:
+    runs-on: macos-15
+    steps: [{run: sw_vers}]
+  m26:
+    runs-on: macos-26
+    steps: [{run: sw_vers}]
+  mlat:
+    runs-on: macos-latest
+    steps: [{run: sw_vers}]
